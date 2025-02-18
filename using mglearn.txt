@@ -1,0 +1,20 @@
+using mglearn
+
+
+import numpy as np 
+import pandas as pd
+import mglearn
+import seaborn as sns
+import scipy as sp
+import sklearn
+import matplotlib.pyplot as plt
+
+#generate datasets
+X, y = mglearn.datasets.make_forge()
+#plot the datasets
+mglearn.discrete_scatter(X[:0],X[:1],y)
+plt.legend(["",""],loc=4)
+plt.xlabel("First feature")
+plt.ylabel("Second feature)
+
+
